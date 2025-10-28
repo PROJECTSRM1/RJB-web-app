@@ -1,0 +1,74 @@
+.ayodhya-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+ background: linear-gradient(135deg, #230700 10%, #f57c00 90%, #230700 100%);
+  /* background: linear-gradient(120deg, #18120a 10%, #4e2200 88%, #000 100%); */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+  filter: blur(2px) brightness(0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #b86b00;
+  /* background: rgba(255,242,228,0.72); */
+  background: rgba(255,242,228,0.56);
+  /* background: rgba(255,242,228,0.18); */
+  /* background: rgba(255,242,228,0.32); */
+
+  border-radius: 18px;
+  padding: 22px 40px;
+  min-width: 320px;
+  z-index: 2;
+  box-shadow: 0 4px 24px rgba(255, 186, 67, 0.11);
+}
+
+.banner-title {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  color: #c77800;
+  text-shadow: 0 2px 8px #fff8e1;
+}
+
+.banner-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #9c5300;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.banner-capt {
+  font-size: 1.1rem;
+  color: #7c4a02;
+  margin-top: 14px;
+  letter-spacing: 1px;
+  font-family: 'Merriweather', serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .banner-content {
+    padding: 10px 8px;
+    min-width: unset;
+  }
+  .banner-title { font-size: 1.5rem; }
+  .banner-subtitle { font-size: 1rem; }
+  .ayodhya-banner { height: 180px; }
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import AyodhyaBanner from './components/AyodhyaBanner';
+import Navbar from './components/Navbar';
+import EventsSection from './components/Sections/EventsSection';
+import HomeSection from './components/HomeSection';
+import GallerySection from './components/Sections/GallerySection';
+import DonationSection from './components/Sections/DonationSection';
+import DarshanTimingsSection from './components/Sections/DarshanTimingsSection';
+import AyodhyaFooter from './components/AyodhyaFooter';
 import './App.css';
+import LiveDarshanSection from './components/Sections/LiveDarshanSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+        <AyodhyaBanner />
+        <Navbar />
+        <HomeSection />
+        <DonationSection />
+        <DarshanTimingsSection />
+        <EventsSection />
+        <GallerySection />
+        {/* <LiveDarshanSection /> */}
+        <AyodhyaFooter />
+      </div>
   );
 }
 
 export default App;
+

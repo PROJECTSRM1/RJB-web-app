@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #591a01 0%, #d8901d 80%);
+  padding: 14px 44px;
+}
+
+.navbar-title {
+  font-size: 1.44rem;
+  font-weight: 700;
+  color: #ffd96c;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0; margin: 0;
+}
+.navbar-links a {
+  color: #ffd96c;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.navbar-links a:hover {
+  color: #8a3400;
+  text-decoration: underline;
+}

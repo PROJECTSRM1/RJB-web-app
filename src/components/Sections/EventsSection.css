@@ -1,0 +1,78 @@
+.events-section {
+  background: linear-gradient(90deg,#fff7e2 0%,#ffeecd 99%);
+  padding: 47px 0 38px 0;
+  text-align: center;
+}
+
+.events-title {
+  color: #b16009;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-size: 2.15rem;
+  margin-bottom: 42px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 14px #d19a0677;
+}
+
+.events-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: #fffbe7;
+  border-radius: 22px;
+  border: 2.5px solid #ffba59;
+  box-shadow: 0 8px 38px #c57d0e2c;
+  width: 320px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 25px;
+  transition: box-shadow .19s;
+}
+
+.event-card:hover {
+  box-shadow: 0 12px 46px #dba51263;
+  border-color: #ffa502;
+  background: #fff8d1;
+}
+
+.event-icon {
+  font-size: 2.4rem;
+  margin-right: 18px;
+}
+
+.event-details {
+  text-align: left;
+  flex: 1;
+}
+
+.event-name {
+  font-family: 'Merriweather', serif;
+  color: #ad6900;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.event-date {
+  font-size: 0.99rem;
+  color: #db9117;
+  margin-bottom: 10px;
+}
+.event-desc {
+  font-size: 1.05rem;
+  color: #4e320d;
+  margin-bottom: 5px;
+  font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 900px) {
+  .events-list { flex-direction: column; gap: 18px;}
+  .event-card { width: 98vw; min-height: 170px; padding: 12px 10px;}
+  .events-title { font-size: 1.3rem; }
+}
