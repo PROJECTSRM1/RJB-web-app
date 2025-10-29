@@ -1,0 +1,42 @@
+.donation-section {
+  background: linear-gradient(90deg,#ffeaa9 0,#fff9e9 99%);
+  text-align: center; padding: 36px 0;
+}
+.donation-section h2 {
+  font-size: 2rem; color: #b16009;
+}
+.donation-desc {
+  font-size: 1.05rem; color: #513b17; margin-bottom: 40px;
+}
+.don-button {
+  background-color: #125832;
+  color: #fff;
+  border: 2px solid #126532;
+  border-radius: 8px;
+  /* gap: 20px; */
+
+  padding: 15px 42px;
+  font-size: 1.13rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  box-shadow: 0 5px 14px #17402b44;
+  transition:
+    /* background 0.22s cubic-bezier(.43,.07,.74,1),
+    color 0.16s cubic-bezier(.58,.13,.76,1), */
+    box-shadow 0.16s;
+  cursor: pointer;
+  outline: none;
+  /* margin: 130px 0; */
+  text-decoration: none;
+}
+
+.don-button:hover,
+.don-button:focus {
+  background-color: #17402b;
+  color: #ffcc33;
+  border-color: #17402b;
+  box-shadow: 0 8px 30px #ffcc3319;
+  text-decoration: none;
+}

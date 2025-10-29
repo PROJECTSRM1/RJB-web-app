@@ -1,0 +1,107 @@
+.darshan-section {
+  position: relative;
+  background: url("https://www.hindustantimes.com/ht-img/img/2024/01/22/1600x900/First_look_of_Ram_lalla_1705911497228_1705911499475.jpg") center center/cover no-repeat;
+  width: 100%;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darshan-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,rgba(0,0,0,0.70),rgba(56, 36, 0, 0.77) 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darshan-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 56px 24px 30px 24px;
+  color: #fffad6;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.darshan-main-title {
+  color: #ffb90a;
+  font-size: 2.3rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 13px #310c00a0;
+  font-weight: bold;
+}
+
+.darshan-times li {
+  color: #ff790d;
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+  list-style-type: none;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.darshan-section-title {
+  margin-top: 34px;
+  color: #fff;
+  font-size: 1.45rem;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  text-shadow: 0 2px 7px #00000065;
+  margin-bottom: 11px;
+}
+
+.aarti-times {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+.aarti-times li {
+  color: #ff9410;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  margin-bottom: 4px;
+  list-style-type: none;
+}
+.aarti-times li span {
+  color: #ffd966;
+  font-weight: bold;
+}
+
+/* Notification card: centered and elegant */
+.darshan-notification {
+  margin: 38px auto 0 auto;
+  padding: 15px 36px 13px 36px;
+  background: rgba(38,33,24,0.82);
+  color: #fffde9;
+  font-size: 1.13rem;
+  text-align: left;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px #a8781832;
+  border: 1.5px solid #c29239;
+  max-width: 550px;
+  font-family: 'Merriweather', serif;
+  z-index: 5;
+  backdrop-filter: blur(2px);
+}
+
+.darshan-notification strong {
+  color: #ffd765;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .darshan-section { min-height: 500px; }
+  .darshan-content { padding: 18px 4vw; }
+  .darshan-main-title { font-size: 1.26rem; }
+  .darshan-section-title { font-size: 1rem; }
+  .darshan-times li, .aarti-times li { font-size: 1.02rem; }
+  .darshan-notification { font-size: 0.92rem; padding: 10px 8px 7px 8px;}
+}
