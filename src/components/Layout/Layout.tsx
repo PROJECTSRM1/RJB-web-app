@@ -11,10 +11,9 @@ import {
   ExclamationCircleOutlined,
   PieChartOutlined,
   MenuUnfoldOutlined,
-  MenuFoldOutlined,
   RobotOutlined
 } from '@ant-design/icons';
-import { Layout, Menu, theme, Modal, message, Button } from 'antd';
+import { Layout, Menu, theme, Modal, message } from 'antd';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import HeaderBar from '../header/header';
 
@@ -22,6 +21,7 @@ const { Content, Sider } = Layout;
 const { confirm } = Modal;
 
 const MenuItems = [
+  { menuIcon: MenuUnfoldOutlined, label: 'Menu' },
   { menuIcon: UserOutlined, label: 'Dashboard', path: '/app/dashboard' },
     {
       key: 'Live Map',
@@ -97,9 +97,9 @@ const LayoutComponent: React.FC = () => {
         style: { backgroundColor: '#0a3b5e', color: '#fff' },
       },
       onOk() {
-        localStorage.removeItem('user');
+        localStorage.removeItem('userData');
         message.success('Logged out successfully!');
-        navigate('/landing');
+        navigate('/login');
       },
       onCancel() {
         message.info('Logout cancelled');
@@ -112,13 +112,17 @@ const LayoutComponent: React.FC = () => {
       handleLogout();
       return;
     }
+    if(e.key === "Menu"){
+      setCollapsed(!collapsed)
+      return;
+    }
 
     const selected = [...MenuItems].find(item => item.path === e.key);
     if (selected?.path) navigate(selected.path);
   };
 
   return (
-    <Layout style={{ height: '100vh', overflow: 'hidden' }}>
+    <Layout style={{ height: '100%', overflow: 'hidden' }}>
       <HeaderBar />
       <Layout>
         <Sider
@@ -129,14 +133,14 @@ const LayoutComponent: React.FC = () => {
           width={200}
           style={{ background: colorBgContainer }}
         >
-          <div style={{ padding: 10, textAlign: 'right' }}>
+          {/* <div style={{ padding: 10, textAlign: 'right' }}>
             <Button
               type="text"
               icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
               onClick={() => setCollapsed(!collapsed)}
               style={{ fontSize: 18, color: '#000' }}
             />
-          </div>
+          </div> */}
 
           <Menu
             mode="inline"
