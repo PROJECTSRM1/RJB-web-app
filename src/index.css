@@ -1,0 +1,116 @@
+
+
+:root {
+  --color-bg: #000813;
+  /* --color-bttn-bg: #0d2848; */
+  --color-bttn-primary: #0a3b5e;
+  --color-bttn-bg: #8abfe5;
+  --color-input-fields: #0c437c;
+  --color-text: #ffffff;
+  --color-primary: #1f6feb;
+  --color-secondary: #30363d;
+  --color-success: #238636;
+  --color-danger: #da3633;
+  --color-header-cards: darkgrey;
+  --font-family: "Inter", sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+/* login page styles */
+
+.rjb-login-container {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.rjb-login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rjb-login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.rjb-logo-icon {
+  font-size: 38px;
+  color: var(--color-bttn-bg);
+  font-weight: bold;
+}
+
+.rjb-login-title {
+  font-weight: bold;
+  margin: 0px !important;
+  color: var(--color-text) !important;
+}
+
+.rjb-checkbox {
+  color: var(--color-bttn-bg);
+}
+
+.rjb-login-forgotpassword-txt {
+  cursor: pointer;
+  color: var(--color-bttn-bg);
+}
+
+.rjb-dynamic-inputbox {
+  width: 400px;
+}
+
+.rjb-create-account-txt{
+  display: block;
+  color: var(--color-bttn-bg);
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rjb-bttn-component{
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--color-bttn-primary);
+}
+
+.rjb-bttn-component:hover{
+  background-color: var(--color-bttn-primary) !important;
+}
+
+/* login page styles ends */
+
+
+/* Layout design */
+.rjb-header-cards{
+  /* background: var(--color-header-cards); */
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* Layout design ends */
+
+@media screen and (min-width: 600px) {
+  .rjb-dynamic-inputbox {
+      min-width: 300px;
+    }
+}
